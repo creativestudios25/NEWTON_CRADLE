@@ -41,7 +41,7 @@ function setup() {
 function keyPressed() {
 	if(keyCode === UP_ARROW) {
 		Matter.Body.applyForce(bob1.body,bob1.body.position,
-		  {x: -7,y: -5});
+		  {x: -100,y: -75});
 	}else{
 		var hello = hello+1;
 	}
@@ -64,8 +64,6 @@ function draw() {
   bob3.display();
   bob4.display();
   bob5.display();
-
-  keyPressed();
 }
 
 
